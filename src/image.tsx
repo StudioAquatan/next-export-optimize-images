@@ -88,7 +88,7 @@ const exportableLoader: ImageLoader = ({ src: _src, width, quality }) => {
       : `${pathWithoutName}/${name}_${width}_${quality || 75}.${extension}`
   const output = `${outputDir}/${filename.replace(/^\//, '')}`
 
-  if (typeof window === 'undefined' || process.env['TEST_JSON_PATH'] !== undefined) {
+  if (typeof window?.document === 'undefined' || process.env['TEST_JSON_PATH'] !== undefined) {
     const json: Manifest[number] = { output, src, width, quality: quality || 75, extension }
     const fs = require('fs-extra') as typeof import('fs-extra')
     const path = require('path') as typeof import('path')

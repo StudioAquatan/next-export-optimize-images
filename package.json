@@ -23,7 +23,8 @@
   "types": "dist/index.d.ts",
   "bin": "bin/index.js",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "scripts": {
     "dev": "swc src -d dist -w",

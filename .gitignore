@@ -5,9 +5,6 @@ node_modules
 .pnp
 .pnp.js
 
-# production
-dist
-
 # testing
 /coverage
 /__tests__/cli/image-optimize/fixtures/results
